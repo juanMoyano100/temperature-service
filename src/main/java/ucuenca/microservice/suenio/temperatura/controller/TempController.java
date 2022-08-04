@@ -21,7 +21,7 @@ import java.time.*;
 import java.time.format.*;
 
 
-@CrossOrigin(origins="*")
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/temperatura")
 public class TempController {
