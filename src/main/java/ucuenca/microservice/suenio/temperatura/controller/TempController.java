@@ -20,6 +20,8 @@ import java.util.Locale;
 import java.time.*;
 import java.time.format.*;
 
+
+@CrossOrigin(origins="*")
 @RestController
 @RequestMapping("/api/temperatura")
 public class TempController {
@@ -62,8 +64,9 @@ public class TempController {
         System.out.println(temp);
         if(temp.isEmpty()){
             return ResponseEntity.noContent().build();
-        }
+        }else{
         return ResponseEntity.ok(temp);
+        }
     }
 
 

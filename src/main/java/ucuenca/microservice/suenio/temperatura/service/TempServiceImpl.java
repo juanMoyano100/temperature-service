@@ -46,9 +46,7 @@ public class TempServiceImpl implements TempService{
         Query query1 = new Query();
         query1.addCriteria(Criteria.where("id_usuario").is(id_usuario));
         List<TempEntity> users = mongoTemplate.find(query1, TempEntity.class);
-        //System.out.println(users);
         return users;
-
     }
 
 }

@@ -23,7 +23,8 @@ eureka:
     serviceUrl:
       defaultZone: http://52.73.98.2:8099/eureka/
 server:
-  port: 0
+  server: localhost
+  port: 8082
 management:
   endpoints:
     web:
