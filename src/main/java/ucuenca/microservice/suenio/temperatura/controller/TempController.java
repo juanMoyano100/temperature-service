@@ -51,9 +51,6 @@ public class TempController {
         List<TempEntity> temp = new ArrayList<>();
         temp = tempService.findListTemp(fechaIni, fechaFin);
         System.out.println(temp);
-        if(temp.isEmpty()){
-            return ResponseEntity.noContent().build();
-        }
         return ResponseEntity.ok(temp);
     }
 
@@ -62,9 +59,6 @@ public class TempController {
         List<TempEntity> temp = new ArrayList<>();
         temp = tempService.findByIdUser(id_user);
         System.out.println(temp);
-        if(temp.isEmpty()){
-            return ResponseEntity.noContent().build();
-        }
         return ResponseEntity.ok(temp);
     }
 
