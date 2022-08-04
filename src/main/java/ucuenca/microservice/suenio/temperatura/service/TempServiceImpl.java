@@ -44,7 +44,7 @@ public class TempServiceImpl implements TempService{
     @Override
     public List<TempEntity> findByIdUser(String id_usuario) {
         Query query1 = new Query();
-        query1.addCriteria(Criteria.where("id_usuario").is("0105737381"));
+        query1.addCriteria(Criteria.where("id_usuario").is(id_usuario));
         List<TempEntity> users = mongoTemplate.find(query1, TempEntity.class);
         //System.out.println(users);
         return users;
