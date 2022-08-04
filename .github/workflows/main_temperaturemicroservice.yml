@@ -49,5 +49,5 @@ jobs:
         with:
           app-name: 'temperaturemicroservice'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2672E99A29E44475967ED33A89E01950 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_716D4C6C75974A6382FEDD8A595AB66F }}
           package: '*.jar'
