@@ -19,5 +19,13 @@ spring:
 eureka:
   instance:
     instance-id: ${spring.application.name}:${random.uuid}
+  client:
+    serviceUrl:
+      defaultZone: http://52.73.98.2:8099/eureka/
 server:
   port: 0
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
