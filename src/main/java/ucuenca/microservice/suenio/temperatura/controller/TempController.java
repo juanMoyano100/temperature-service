@@ -64,9 +64,8 @@ public class TempController {
         System.out.println(temp);
         if(temp.isEmpty()){
             return ResponseEntity.noContent().build();
-        }else{
-        return ResponseEntity.ok(temp);
         }
+        return ResponseEntity.ok(temp);
     }
 
 
